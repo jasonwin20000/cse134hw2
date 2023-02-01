@@ -9,9 +9,11 @@
 <body>
 	<header>
 		<h1>Jason Win's Website</h1>
+		<h2>heading for a heading</h2>
 
 		<img src="images/personimage.png"/>
 		<figcaption>Placeholder image from thispersondoesnotexist.com until I find a cool picture of myself to use</figcaption>
+		<br>
 		<nav>
 			<a href="#aboutMe">About Me</a>
 			<a href="#experience">Experience</a>
@@ -22,14 +24,77 @@
 	</header>
 
 	<main>
-		<h2 id="aboutMe">About Me</h2>
-		<h2 id="experience">Experience</h2>
-		<h2 id="contactMe">Contact Me!</h2>
-    	<p>super cool content</p>
+		<section>
+			<h3 id="aboutMe">About Me</h2>
+				<div>
+					<aside>
+						<iframe src="iframe.html"></iframe>
+						<br>
+						<span>What would I do with span without CSS</span>
+						<br><br>
+						<hr>
+						<code>System.out.println("Hello World!);</code>
+						<hr>
+						<pre>I'm 
+							really
+							cool.
+						</pre>
+					</aside>
+				</div>
+				<br>
+				<table>
+					<tr>
+						<th>Technical Skills</th>
+					</tr>
+					<tr>
+						<td>Java</td>
+					</tr>
+					<tr>
+						<td>C++</td>
+					</tr>
+					<tr>
+						<td>C</td>
+					</tr>
+				</table>
+				<br>
+				<label>Jason's Favorite Drinks</label>
+				<ul>
+					<li>Milk Tea</li>
+					<li>Fruit Tea</li>
+					<li>Matcha Latte</li>
+				</ul>
+
+				<br>
+
+				<label>What's Jason's favorite car?:</label>
+					<select>
+						<option>Nissan GT-R</option>
+						<option>Honda Civic Type R</option>
+						<option>Audi R8</option>
+						<option>Tesla Model S</option>
+					</select><br>
+
+				<label>Choose Jason's starter Pokemon:</label>
+					<input list="pokemon">
+					<datalist id="pokemon">
+						<option value="Pikachu"></option>
+						<option value="Mudkip"></option>
+						<option value="Treecko"></option>
+						<option value="Torchic"></option>
+					</datalist>
+		</section>
+		
+			
+		<h3 id="experience">Experience</h2>
+		<h3 id="contactMe">Contact Me!</h2>
+			<label>Leave me a message!</label><br>
+            <textarea rows="4" cols="50"></textarea><br>
+			<button type="button">Submit!</button>
+    	<p><b>super</b> cool <i>content</i></p>
 	</main>
 
 	<footer>
-		<p>By Jason Win</p>
+		<p>By <em>Jason</em> <strong>Win</strong></p>
 	</footer>
 </body>
 
