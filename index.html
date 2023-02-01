@@ -3,8 +3,15 @@
 
 <head>
 	<title>CSE 134B Homework 2 Website</title>
-	<link rel="icon" href="favicon.ico" />
+	<link rel="icon" href="favicon.ico">
 	<meta name="Author" content="Jason Win">
+	<style>
+		h1{
+			border-style: solid;			
+			border-color: aqua;
+			border-width: 3px; 
+		}
+	</style>
 </head>
 
 <body>
@@ -13,7 +20,7 @@
 		<h2>heading for a heading</h2>
 
 		<figure>
-			<img src="images/personimage.png" alt="super cool picture of me not really">
+			<img src="media/personimage.png" alt="super cool picture of me not really">
 			<figcaption>Placeholder image from thispersondoesnotexist.com until I find a cool picture of myself to use</figcaption>
 		</figure>
 
@@ -34,7 +41,7 @@
 					<aside>
 						<iframe src="iframe.html"></iframe>
 						<br>
-						<span>What would I do with span without CSS</span>
+						<span>I love learning about computer science!</span>
 						<br><br>
 						<hr>
 						<code>System.out.println("Hello World!);</code>
@@ -50,12 +57,12 @@
 				</div>
 				<br>
 				<details>
-					<summary>Jason's Bio</summary>
+					<summary>Bio</summary>
 					<p>really cool bio about myself</p>
 				</details>
 				<br>
 				<table>
-					<caption>Jason's Skills</caption>
+					<caption>My Skills</caption>
 					<colgroup>
 						<col span = "2">
 					</colgroup>
@@ -80,26 +87,53 @@
 
 				<form>
 					<fieldset>
-						<legend>What's Jason's favorite car?</legend>
+						<legend>What's my favorite car?</legend>
 						<select>
-							<option>Nissan GT-R</option>
-							<option>Honda Civic Type R</option>
-							<option>Audi R8</option>
-							<option>Tesla Model S</option>
+							<optgroup label="Gas Cars">
+								<option>Nissan GT-R</option>
+								<option>Honda Civic Type R</option>
+								<option>Audi R8</option>
+							</optgroup>
+							<optgroup label="Electric Cars">
+								<option>Tesla Model S</option>
+								<option>Lucid Air</option>
+							</optgroup>
 						</select>
 					</fieldset>
 				</form>
 				<br>
-				<label>Jason's Favorite Drinks</label>
+				<label>My Car:</label>
+				<br>
+				<picture>
+					<source media="(min-width: 700px)" srcset="media/pic1.png">
+					<source media="(min-width: 200px)" srcset="media/pic2.png">
+					<img src="media/pic3.png" alt="super cool picture of my car">
+				</picture>
+				<br>
+				<label>My Favorite Drinks:</label>
 				<ul>
 					<li>Milk Tea</li>
 					<li>Fruit Tea</li>
 					<li>Matcha Latte</li>
 				</ul>
+				<br>
+
+				<label>My Top 3 Favorite Foods:</label>
+				<ol>
+					<li>Korean BBQ</li>
+					<li>Fried Chicken</li>
+					<li>Ramen</li>
+				</ol>
+				<br>
+
+				<label> I love dubstep music.</label>
+				<audio controls>
+                    <source src="media/wubs.wav" type="audio/mpeg">
+                </audio>
 
 				<br>
 
-				<label>Jason's Favorite Color:</label>
+				<label>My Favorite Colors:</label>
 				<canvas id = "sampleCanvas" width="200" height="100"></canvas>
 				<script>
 					var canvas = document.getElementById("sampleCanvas");
@@ -107,6 +141,9 @@
 					context.fillStyle = "blue"
 					context.fillRect(0,0,200,100);
 				</script>
+				<svg>
+					<rect width="200" height="100" fill="turquoise">
+				</svg>
 
 				<br><br>
 
@@ -122,11 +159,15 @@
 		
 			
 		<h3 id="experience">Experience</h3>
+			<p><b>super</b> cool <i>content</i></p>
+			<h4>Placeholder for a video demonstrating a project?</h4>
+			<video width="240" height="360" controls>
+				<source src="media/video.mov" type="video/mp4">
+			</video>
 		<h3 id="contactMe">Contact Me!</h3>
 			<label>Leave me a message!</label><br>
             <textarea rows="4" cols="50"></textarea><br>
 			<button type="button">Submit!</button>
-    	<p><b>super</b> cool <i>content</i></p>
 	</main>
 
 	<footer>
