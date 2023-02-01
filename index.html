@@ -42,23 +42,52 @@
 							really
 							cool.
 						</pre>
+						<template>
+							<p>top secret info sorry cannot be displayed can't use JavaScript yet!</p>
+						</template>
 					</aside>
 				</div>
 				<br>
+				<details>
+					<summary>Jason's Bio</summary>
+					<p>really cool bio about myself</p>
+				</details>
+				<br>
 				<table>
+					<caption>Jason's Skills</caption>
+					<colgroup>
+						<col span = "2">
+					</colgroup>
 					<tr>
 						<th>Technical Skills</th>
+						<th>Soft Skills</th>
 					</tr>
 					<tr>
 						<td>Java</td>
+						<td>Teamwork</td>
 					</tr>
 					<tr>
 						<td>C++</td>
+						<td>Communication</td>
 					</tr>
 					<tr>
 						<td>C</td>
+						<td>Eager to learn</td>
 					</tr>
 				</table>
+				<br>
+
+				<form>
+					<fieldset>
+						<legend>What's Jason's favorite car?</legend>
+						<select>
+							<option>Nissan GT-R</option>
+							<option>Honda Civic Type R</option>
+							<option>Audi R8</option>
+							<option>Tesla Model S</option>
+						</select>
+					</fieldset>
+				</form>
 				<br>
 				<label>Jason's Favorite Drinks</label>
 				<ul>
@@ -69,13 +98,16 @@
 
 				<br>
 
-				<label>What's Jason's favorite car?:</label>
-					<select>
-						<option>Nissan GT-R</option>
-						<option>Honda Civic Type R</option>
-						<option>Audi R8</option>
-						<option>Tesla Model S</option>
-					</select><br>
+				<label>Jason's Favorite Color:</label>
+				<canvas id = "sampleCanvas" width="200" height="100"></canvas>
+				<script>
+					var canvas = document.getElementById("sampleCanvas");
+					var context = canvas.getContext("2d");
+					context.fillStyle = "blue"
+					context.fillRect(0,0,200,100);
+				</script>
+
+				<br><br>
 
 				<label>Choose Jason's starter Pokemon:</label>
 					<input list="pokemon">
@@ -89,6 +121,13 @@
 		
 			
 		<h3 id="experience">Experience</h3>
+			<canvas id = "sampleCanvas" width="200" height="100"></canvas>
+			<script>
+				var canvas = document.getElementById("sampleCanvas");
+				var context = canvas.getContext("2d");
+				context.fillStyle = "blue"
+			</script>
+
 		<h3 id="contactMe">Contact Me!</h3>
 			<label>Leave me a message!</label><br>
             <textarea rows="4" cols="50"></textarea><br>
