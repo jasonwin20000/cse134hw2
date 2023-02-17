@@ -18,8 +18,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    height: 40px;
-    line-height: 20px;
+    height: 5vh;
+    line-height: 3vh;
     background-color: #eee;
     padding: 5px;
 }
@@ -63,4 +63,14 @@ h1 {
 
 #profilePic:hover {
     transform: scale(1.5);
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        display: flex;
+    }
+
+    nav {
+        width: 100%;
+    }
 }
