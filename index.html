@@ -3,175 +3,49 @@
 
 <head>
 	<title>CSE 134B Homework 2 Website</title>
-	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
 	<meta name="Author" content="Jason Win">
-	<style>
-		h1{
-			border-style: solid;			
-			border-color: aqua;
-			border-width: 3px; 
-		}
-	</style>
 </head>
 
 <body>
 	<header>
-		<h1>Jason Win's Website</h1>
-		<h2>heading for a heading</h2>
-
-		<figure>
-			<img src="media/personimage.png" alt="super cool picture of me not really">
-			<figcaption>Placeholder image from thispersondoesnotexist.com until I find a cool picture of myself to use</figcaption>
-		</figure>
-
-		<br>
 		<nav>
+			<a href="https://melodious-smakager-81228d.netlify.app/">Jason Win</a>
 			<a href="#aboutMe">About Me</a>
 			<a href="#experience">Experience</a>
 			<a href="#contactMe">Contact Me</a>
 		</nav>
-
-
 	</header>
 
 	<main>
-		<section>
-			<h3 id="aboutMe">About Me</h3>
-				<div>
-					<aside>
-						<iframe src="iframe.html"></iframe>
-						<br>
-						<span>I love learning about computer science!</span>
-						<br><br>
-						<hr>
-						<code>System.out.println("Hello World!);</code>
-						<hr>
-						<pre>I'm 
-							really
-							cool.
-						</pre>
-						<template>
-							<p>top secret info sorry cannot be displayed can't use JavaScript yet!</p>
-						</template>
-					</aside>
-				</div>
-				<br>
-				<details>
-					<summary>Bio</summary>
-					<p>really cool bio about myself</p>
-				</details>
-				<br>
-				<table>
-					<caption>My Skills</caption>
-					<colgroup>
-						<col span = "2">
-					</colgroup>
-					<tr>
-						<th>Technical Skills</th>
-						<th>Soft Skills</th>
-					</tr>
-					<tr>
-						<td>Java</td>
-						<td>Teamwork</td>
-					</tr>
-					<tr>
-						<td>C++</td>
-						<td>Communication</td>
-					</tr>
-					<tr>
-						<td>C</td>
-						<td>Eager to learn</td>
-					</tr>
-				</table>
-				<br>
-
-				<form>
-					<fieldset>
-						<legend>What's my favorite car?</legend>
-						<select>
-							<optgroup label="Gas Cars">
-								<option>Nissan GT-R</option>
-								<option>Honda Civic Type R</option>
-								<option>Audi R8</option>
-							</optgroup>
-							<optgroup label="Electric Cars">
-								<option>Tesla Model S</option>
-								<option>Lucid Air</option>
-							</optgroup>
-						</select>
-					</fieldset>
-				</form>
-				<br>
-				<label>My Car:</label>
-				<br>
-				<picture>
-					<source media="(min-width: 700px)" srcset="media/pic1.png">
-					<source media="(min-width: 200px)" srcset="media/pic2.png">
-					<img src="media/pic3.png" alt="super cool picture of my car">
-				</picture>
-				<br>
-				<label>My Favorite Drinks:</label>
-				<ul>
-					<li>Milk Tea</li>
-					<li>Fruit Tea</li>
-					<li>Matcha Latte</li>
-				</ul>
-				<br>
-
-				<label>My Top 3 Favorite Foods:</label>
-				<ol>
-					<li>Korean BBQ</li>
-					<li>Fried Chicken</li>
-					<li>Ramen</li>
-				</ol>
-				<br>
-
-				<label> I love dubstep music.</label>
-				<audio controls>
-                    <source src="media/wubs.wav" type="audio/mpeg">
-                </audio>
-
-				<br>
-
-				<label>My Favorite Colors:</label>
-				<canvas id = "sampleCanvas" width="200" height="100"></canvas>
-				<script>
-					var canvas = document.getElementById("sampleCanvas");
-					var context = canvas.getContext("2d");
-					context.fillStyle = "blue"
-					context.fillRect(0,0,200,100);
-				</script>
-				<svg>
-					<rect width="200" height="100" fill="turquoise"></rect>
-				</svg>
-
-				<br><br>
-
-				<label>Choose Jason's starter Pokemon:</label>
-					<input list="pokemon">
-					<datalist id="pokemon">
-						<option value="Pikachu"></option>
-						<option value="Mudkip"></option>
-						<option value="Treecko"></option>
-						<option value="Torchic"></option>
-					</datalist>
+		<section id="aboutMe">
+			<h1>Hi, I'm Jason!</h2>
+			<img src="media/IMG_3592.jpg" id="profilePic" alt="super cool picture of me!">
+			<p>A current computer science undergraduate at the University of California, San Diego and aspiring software engineer looking to explore my passion for technology through new experiences and learning. I'm always open to any new opportunities and meeting new people, so let's connect! I'm currently based out of the Bay Area in San Jose, CA. I'm also an avid car enthusiast and love driving as well as photographing cars. In my free time, I also love listening to music, playing basketball, League of Legends, eating good food.</p>
+			<a href="https://drive.google.com/file/d/1n3yyeucK3vcDWgNrIYoSndekHPOgCq-T/view?usp=sharing">Check out my resume!</a>
 		</section>
 		
 			
-		<h3 id="experience">Experience</h3>
-			<p><b>super</b> cool <i>content</i></p>
-			<h4>Placeholder for a video demonstrating a project?</h4>
-			<video width="240" height="360" controls>
-				<source src="media/video.mov" type="video/mp4">
-			</video>
-		<h3 id="contactMe">Contact Me!</h3>
-			<label>Leave me a message!</label><br>
-            <textarea rows="4" cols="50"></textarea><br>
-			<button type="button">Submit!</button>
+		<section id="experience">
+			<h2>Experience</h2>
+			<ul>
+				<li>Previous Intern @ ServiceNow</li>
+				<li>Previous Intern @ San Diego SuperComputer Center</li>
+			</ul>
+		</section>
+
+		<section id="contactMe">
+			<h2>Contact Me!</h2>
+			<nav>
+				<a href="https://www.linkedin.com/in/jason-win/">LinkedIn</a>
+				<a href="https://github.com/jasonwin20000">GitHub</a>
+				<a href="">jasonwin2000@gmail.com</a>
+			</nav>
+		</section>
 	</main>
 
 	<footer>
-		<p>By <em>Jason</em> <strong>Win</strong></p>
+		<p>Thank you for visiting!</p>
 	</footer>
 </body>
 
