@@ -64,13 +64,3 @@ h1 {
 #profilePic:hover {
     transform: scale(1.5);
 }
-
-@media only screen and (max-width: 600px) {
-    header{
-        display: flex;
-    }
-
-    nav {
-        width: 100%;
-    }
-}
