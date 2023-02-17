@@ -12,6 +12,18 @@ nav {
     gap: 0.5rem;
 }
 
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    line-height: 20px;
+    background-color: #eee;
+    padding: 5px;
+}
+
 a {
     background-color: var(--blue);
     color: var(--white);
@@ -19,6 +31,7 @@ a {
     padding: 0.5rem;
     text-align: center;
     transition: all 0.5s ease-out;
+    text-decoration: none;
 }
 
 a:hover {
@@ -27,6 +40,7 @@ a:hover {
 }
 
 h1 {
+    padding-top: 50px;
     animation-duration: 3s;
     animation-name: slidein;
 }
@@ -34,7 +48,7 @@ h1 {
 @keyframes slidein {
     from {
         margin-left: 100%;
-        width: 300%;
+        width: 200%;
     }
   
     to {
