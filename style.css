@@ -64,3 +64,11 @@ h1 {
 #profilePic:hover {
     transform: scale(1.5);
 }
+
+#experience {
+    height: 20vh;
+}
+
+#contactMe {
+    height: 30vh;
+}
